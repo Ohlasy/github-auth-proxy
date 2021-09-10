@@ -1,8 +1,8 @@
 This is a simple app that makes it possible to authenticate [Netlify CMS](https://www.netlifycms.org) against GitHub. It runs on the Vercel serverless infrastructure.
 
-## Configuration
+## Installing & Configuration
 
-The app is configured using environment variables, [see Vercel docs](https://vercel.com/docs/projects/environment-variables).
+Your probably want to clone the repo and deploy it to your Vercel account. No code changes are needed, the configuration is done through environment variables ([see Vercel docs](https://vercel.com/docs/projects/environment-variables)).
 
 | Variable | Default | Comments
 |---|---|---|
