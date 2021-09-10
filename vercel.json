@@ -1,0 +1,22 @@
+{
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "/auth"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/auth",
+            "destination": "/api/auth"
+        },
+        {
+            "source": "/callback",
+            "destination": "/api/callback"
+        },
+        {
+            "source": "/success",
+            "destination": ":/api/success"
+        }
+    ]
+}

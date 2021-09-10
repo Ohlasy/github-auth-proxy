@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@types/node": "^16.9.1"
+  },
+  "dependencies": {
+    "@types/randomstring": "^1.1.7",
+    "@types/simple-oauth2": "^4.1.1",
+    "@vercel/node": "^1.12.1",
+    "randomstring": "^1.2.1",
+    "simple-oauth2": "^4.2.0"
+  }
+}
