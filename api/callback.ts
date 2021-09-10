@@ -1,10 +1,5 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import { oAuth2 } from "./_oauth";
-
-const secrets = {
-  REDIRECT_URL: "http://localhost:3000/callback",
-  OAUTH_SCOPES: "repo,user",
-};
+import { oAuth2, config } from "./_oauth";
 
 function renderScript(message: string, payload: Record<string, string>) {
   return `<html><body><script>
@@ -31,8 +26,8 @@ export default async (
   try {
     const token = await oAuth2.getToken({
       code: request.query.code as string,
-      redirect_uri: secrets.REDIRECT_URL,
-      scope: secrets.OAUTH_SCOPES,
+      redirect_uri: config.REDIRECT_URL,
+      scope: config.OAUTH_SCOPES,
     });
     const body = renderScript("success", {
       token: token.token.access_token,
